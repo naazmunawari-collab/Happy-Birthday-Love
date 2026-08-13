@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 34th Birthday, Syed Yousuf — My Love</title>
+  <meta name="description" content="A private cinematic 3D birthday universe created with love by your wife for Syed Yousuf's 34th Birthday.">
+
+  <!-- Google Fonts: Luxury Cursive, Serif, & Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Ambient Glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- Background 3D & Particle Canvases -->
+  <canvas id="three-canvas"></canvas>
+  <canvas id="particle-canvas"></canvas>
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Preloader / Loading Experience -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="spinner-glow"></div>
+    <div class="loading-text">Preparing something special for Yousuf...</div>
+  </div>
+
+  <!-- Floating Navigation Bar -->
+  <nav class="floating-nav" id="floating-nav">
+    <a href="#section-hero" class="nav-link active">Hero</a>
+    <a href="#section-gift" class="nav-link">Gift</a>
+    <a href="#section-memories" class="nav-link">Memories</a>
+    <a href="#section-reasons" class="nav-link">Reasons</a>
+    <a href="#section-journey" class="nav-link">Journey</a>
+    <a href="#section-letter" class="nav-link">Letter</a>
+    <a href="#section-wishes" class="nav-link">Wishes</a>
+    <a href="#section-final" class="nav-link">Surprise</a>
+  </nav>
+
+  <!-- Floating Audio Player Control -->
+  <button class="audio-toggle-btn" id="audio-toggle-btn" aria-label="Toggle Romantic Music">
+    <div class="audio-wave">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <span class="audio-status-text">🎵 Music</span>
+  </button>
+
+  <!-- SECTION 1 — The Secret Opening -->
+  <section id="section-secret-opening" class="section-secret-opening">
+    <div class="opening-text-container">
+      <div id="opening-line-1" class="opening-line cursive-text">I made something for you...</div>
+      <div id="opening-line-2" class="opening-line cursive-text">Because today isn't just another day.</div>
+      <div id="opening-line-3" class="opening-line cursive-text">Today, my favorite person turns 34.</div>
+      <h1 id="opening-line-4" class="opening-line highlight cursive-heading">Happy 34th Birthday, My Love ❤️</h1>
+      <button id="btn-enter-surprise" class="btn-gold-glow">Enter Your Surprise ✨</button>
+    </div>
+  </section>
+
+  <!-- MAIN CONTINUOUS NARRATIVE EXPERIENCE -->
+  <main id="main-experience" class="main-experience">
+
+    <!-- SECTION 2 — The Birthday Hero -->
+    <section id="section-hero" class="section section-hero">
+      <div class="section-container">
+        <div class="hero-badge">34th Birthday Universe</div>
+        <h1 class="hero-title cursive-heading">Happy Birthday, My Love</h1>
+        <div class="hero-age-display cursive-text">Syed Yousuf — 34</div>
+        <div class="hero-quote-card">
+          <p class="hero-quote-text cursive-quote">"If I could give you one thing today, it would be the ability to see yourself through my eyes."</p>
+        </div>
+
+        <!-- Special August Birthday Calendar Widget -->
+        <div class="august-calendar-card" style="margin: 2.5rem auto 0; max-width: 480px; background: var(--glass-bg); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1.5px solid var(--accent-gold); border-radius: 28px; padding: 2rem 1.5rem; box-shadow: var(--glass-shadow); text-align: center; position: relative; z-index: 20;">
+          <div class="calendar-header cursive-heading" style="font-size: 2.5rem; color: var(--accent-gold-light); margin-bottom: 1rem;">
+            📅 August — Special Month
+          </div>
+          <div class="calendar-days-grid" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.5rem; margin-bottom: 0.6rem; font-size: 0.85rem; color: var(--text-muted); font-weight: 600; letter-spacing: 0.05em;">
+            <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+          </div>
+          <div class="calendar-dates-grid" id="august-calendar-grid" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.5rem;">
+            <!-- Calendar grid rendered dynamically via app.js -->
+          </div>
+          <div class="calendar-hint cursive-quote" style="margin-top: 1.2rem; font-size: 1.25rem; color: var(--accent-rose-soft);">
+            ✨ Click on the golden heart dates for a special message! ✨
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Calendar Special Message Modal -->
+    <div id="calendar-modal" class="photo-modal">
+      <div class="photo-modal-content" style="text-align: center; align-items: center; max-width: 620px; padding: 3rem 2rem;">
+        <button id="calendar-modal-close" class="photo-modal-close">&times;</button>
+        <div style="font-size: 4rem; margin-bottom: 0.5rem; animation: pulse-glow 1.5s infinite alternate;">💖 🎂 📅</div>
+        <h2 class="section-title cursive-heading" id="calendar-modal-title" style="font-size: 2.8rem; color: var(--accent-gold-light); margin-bottom: 0.8rem;">August 16th — The Day My World Changed ❤️</h2>
+        <p class="photo-modal-note cursive-quote" id="calendar-modal-body" style="font-size: 1.6rem; color: var(--text-ivory); margin-bottom: 1.5rem; line-height: 1.6;">
+          "34 years ago on this very day, August 16th, the most incredible man was born. Out of all the days in history, August 16th will forever be my absolute favorite date."
+        </p>
+        <div class="cursive-heading" style="font-size: 2.4rem; color: var(--accent-gold); margin-bottom: 1.5rem;">
+          Happy 34th Birthday, My Love! ❤️
+        </div>
+        <button id="calendar-modal-close-btn" class="btn-gold-glow">Keep In My Heart ✨</button>
+      </div>
+    </div>
+
+    <!-- SECTION 3 — A Little Gift From Me -->
+    <section id="section-gift" class="section section-gift">
+      <div class="section-container">
+        <div class="gift-wrapper">
+          <div class="gift-box-3d-container" id="gift-box" title="Click to open your gift!">
+            <div class="gift-box-visual" id="gift-box-visual">
+              <div class="gift-box-lid">
+                <div class="gift-ribbon-v-lid"></div>
+                <div class="gift-ribbon-h-lid"></div>
+                <div class="gift-bow">🎁</div>
+              </div>
+              <div class="gift-box-body">
+                <div class="gift-ribbon-v"></div>
+                <div class="gift-ribbon-h"></div>
+                <div class="gift-inside-glow"></div>
+              </div>
+            </div>
+          </div>
+          <h2 class="gift-headline cursive-heading">I couldn't wrap my love in a box...</h2>
+          <p class="gift-subheadline cursive-text">So I wrapped a little piece of our story instead.</p>
+          <button id="btn-open-gift" class="btn-gold-glow">Open Your Gift ✨</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gift Reveal Modal -->
+    <div id="gift-reveal-modal" class="photo-modal">
+      <div class="photo-modal-content" style="text-align: center; align-items: center;">
+        <button id="gift-reveal-close" class="photo-modal-close">&times;</button>
+        <div style="font-size: 4rem; margin-bottom: 0.5rem;">✨ 🎁 ✨</div>
+        <h2 class="section-title cursive-heading" style="font-size: 2.5rem; margin-bottom: 0.5rem;">Inside This Box Is My Entire Heart</h2>
+        <p class="photo-modal-note cursive-quote" style="font-size: 1.4rem; max-width: 550px; color: var(--text-gold);">
+          "Every memory we've shared, every quiet moment, and every dream we've built together is wrapped right here."
+        </p>
+        <button id="btn-gift-continue" class="btn-gold-glow" style="margin-top: 1rem;">Explore Our Memories ❤️</button>
+      </div>
+    </div>
+
+    <!-- SECTION 4 — Our Memories -->
+    <section id="section-memories" class="section section-memories">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title cursive-heading">Our Little Universe</h2>
+          <p class="section-subtitle cursive-text">Some moments pass in seconds. Some stay with me forever.</p>
+        </div>
+        <div id="memories-grid" class="memories-grid">
+          <!-- Memory polaroid cards rendered dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Modal -->
+    <div id="photo-modal" class="photo-modal">
+      <div class="photo-modal-content">
+        <button id="photo-modal-close" class="photo-modal-close">&times;</button>
+        <img id="photo-modal-img" src="" alt="Memory detail" class="photo-modal-img">
+        <div id="photo-modal-caption" class="photo-modal-caption cursive-heading"></div>
+        <div id="photo-modal-note" class="photo-modal-note cursive-quote"></div>
+      </div>
+    </div>
+
+    <!-- SECTION 5 — Reasons I Love You -->
+    <section id="section-reasons" class="section section-reasons">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title cursive-heading">Reasons I Love You</h2>
+          <p class="section-subtitle cursive-text">Click each glowing node to unlock 7 reasons why you mean the world to me.</p>
+        </div>
+        <div id="reasons-counter-text" class="reasons-counter cursive-text">0 of 7 Reasons Unlocked ❤️</div>
+        <div id="reasons-grid" class="reasons-grid">
+          <!-- 7 Reason nodes rendered dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Reason Modal -->
+    <div id="reason-modal" class="reason-modal">
+      <div class="reason-modal-card">
+        <div id="reason-modal-num" class="reason-modal-num cursive-heading">#1</div>
+        <div id="reason-modal-text" class="reason-modal-text cursive-quote"></div>
+        <button id="reason-modal-close" class="reason-modal-close-btn">Keep In My Heart ❤️</button>
+      </div>
+    </div>
+
+    <!-- SECTION 6 — Our Journey -->
+    <section id="section-journey" class="section section-journey">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title cursive-heading">From Then → To Us</h2>
+          <p class="section-subtitle cursive-text">The chapters of our life together, written in quiet moments and unforgettable milestones.</p>
+        </div>
+        <div id="timeline-container" class="timeline-container">
+          <!-- Timeline chapters rendered dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 — A Letter From Your Wife -->
+    <section id="section-letter" class="section section-letter">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title cursive-heading">A Letter For You</h2>
+        </div>
+        <div class="letter-wrapper">
+          <div class="letter-card">
+            <div class="letter-candle-glow"></div>
+            <div id="letter-text-content" class="letter-text cursive-quote" style="font-size: 1.6rem; line-height: 1.8;">
+              <!-- Handwritten letter content rendered via app.js -->
+            </div>
+            <div class="letter-signature cursive-heading">
+              Forever yours,<br>
+              Your wife ❤️
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8 — If I Could Give You Anything -->
+    <section id="section-wishes" class="section section-wishes">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title cursive-heading">If I Could Give You Anything...</h2>
+          <p class="section-subtitle cursive-text">Click each token to reveal my heartfelt wishes for your 34th year.</p>
+        </div>
+        <div id="wishes-grid" class="wishes-grid">
+          <!-- Wish cards rendered dynamically via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9 — The Final Surprise & Birthday Celebration -->
+    <section id="section-final" class="section section-final">
+      <div class="section-container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        
+        <div class="final-pre-container" style="margin-bottom: 2rem;">
+          <div class="final-pre-line active cursive-heading" style="font-size: 2.5rem; color: var(--text-gold);">One last thing...</div>
+          <div class="final-pre-line active cursive-heading" style="font-size: 2.2rem; color: var(--text-muted);">Before you leave...</div>
+          <div class="final-pre-line active cursive-heading" style="font-size: 2.8rem; color: var(--accent-rose-soft);">Look closer.</div>
+        </div>
+
+        <!-- Grand Celebration Card & 3D Birthday Cake -->
+        <div class="celebration-card-wrapper" style="width: 100%; max-width: 800px; padding: 3.5rem 2.5rem; background: var(--glass-bg); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 2px solid var(--accent-gold); border-radius: 32px; box-shadow: 0 30px 70px rgba(0, 0, 0, 0.95), 0 0 45px var(--accent-gold-glow); position: relative; z-index: 30;">
+          
+          <h1 class="final-headline cursive-heading" style="font-size: 4.5rem; color: var(--accent-gold-light); line-height: 1.1; margin-bottom: 0.5rem; text-shadow: 0 0 30px var(--accent-gold-glow);">Happy Birthday, My Love ❤️</h1>
+          <h2 class="final-subheadline cursive-heading" style="font-size: 2.8rem; color: var(--text-ivory); margin-bottom: 1.5rem;">You are my favorite chapter.</h2>
+          <p class="final-body cursive-quote" style="font-size: 1.5rem; color: var(--text-muted); margin-bottom: 2rem;">And I can't wait to see what the next chapters of our life look like.</p>
+
+          <!-- Luxury 3D Birthday Cake with Glowing Candles (Clickable) -->
+          <div class="birthday-cake-wrapper" id="birthday-cake-trigger" style="cursor: pointer;" title="Click cake to blow candles & open birthday pop-up!">
+            <div class="cake-glow-bg"></div>
+            <div class="birthday-cake">
+              <!-- Candles with Flames -->
+              <div class="candles-container">
+                <div class="candle c1"><div class="flame" id="flame1"></div></div>
+                <div class="candle c2"><div class="flame" id="flame2"></div></div>
+                <div class="candle c3"><div class="flame" id="flame3"></div></div>
+                <div class="candle c4"><div class="flame" id="flame4"></div></div>
+                <div class="candle c5"><div class="flame" id="flame5"></div></div>
+              </div>
+              <!-- Cake Layers -->
+              <div class="cake-layer layer-top">
+                <div class="icing"></div>
+                <div class="number-34-badge cursive-heading">34</div>
+              </div>
+              <div class="cake-layer layer-middle">
+                <div class="icing"></div>
+              </div>
+              <div class="cake-layer layer-bottom">
+                <div class="icing"></div>
+              </div>
+              <div class="cake-plate"></div>
+            </div>
+          </div>
+
+          <button id="btn-blow-candles" class="btn-gold-glow" style="margin: 2rem 0; font-size: 1.15rem; padding: 1.2rem 3rem;">🎂 Make a Wish & Blow Candles! ✨</button>
+
+          <p id="cake-wish-message" class="final-body cursive-quote" style="font-size: 1.6rem; color: var(--text-gold); margin-bottom: 2rem;">
+            "Click the cake or button to blow out candles and reveal your birthday surprise!"
+          </p>
+
+          <div class="final-wish-big cursive-heading" style="font-size: 3.5rem; color: var(--accent-gold); margin-bottom: 1.5rem;">Happy 34th Birthday, My Love ❤️</div>
+          <div class="final-signature cursive-heading" style="font-size: 3.2rem; color: var(--accent-rose-soft); white-space: pre-line;">With all my love,<br>Your Wife</div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Grand Full-Screen Birthday Pop-Up Overlay -->
+  <div id="grand-birthday-popup" class="final-reveal-overlay">
+    <button id="grand-popup-close" class="photo-modal-close" style="position:absolute; top:2rem; right:2.5rem; font-size: 3.5rem; color: var(--text-gold);">&times;</button>
+
+    <div class="celebration-container" style="text-align: center; max-width: 900px; padding: 2rem;">
+      <div style="font-size: 4.5rem; margin-bottom: 1rem; animation: pulse-glow 1.5s infinite alternate;">🎉 🎂 🥂</div>
+      
+      <h1 class="final-headline cursive-heading" style="font-size: 5.5rem; color: var(--accent-gold-light); line-height: 1.1; margin-bottom: 1rem; text-shadow: 0 0 45px var(--accent-gold-glow);">
+        Happy Birthday, My Love ❤️
+      </h1>
+      
+      <h2 class="final-subheadline cursive-heading" style="font-size: 3.2rem; color: var(--accent-rose-soft); margin-bottom: 1.5rem;">
+        Syed Yousuf — 34 Years Of Magic
+      </h2>
+      
+      <p class="final-body cursive-quote" style="font-size: 1.8rem; color: var(--text-gold); max-width: 750px; margin: 0 auto 2.5rem; line-height: 1.6;">
+        "You are my favorite chapter, my calm in every storm, and my favorite place in the entire world. May your 34th year be filled with endless joy, peace, and all the happiness your heart can hold."
+      </p>
+
+      <div class="final-wish-big cursive-heading" style="font-size: 3.8rem; color: var(--accent-gold); margin-bottom: 2rem;">
+        I Love You Forever &amp; Always ✨
+      </div>
+
+      <div class="final-signature cursive-heading" style="font-size: 3.5rem; color: var(--text-ivory); white-space: pre-line;">
+        With all my love,<br>Your Wife ❤️
+      </div>
+
+      <button id="grand-popup-close-btn" class="btn-gold-glow" style="margin-top: 2.5rem; font-size: 1.1rem; padding: 1rem 3rem;">
+        Revisit Our Memories ✨
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript ES Modules -->
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>
+
+  <!-- JavaScript ES Modules -->
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

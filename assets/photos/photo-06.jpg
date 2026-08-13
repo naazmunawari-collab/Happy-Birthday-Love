@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c0b1e"/>
+      <stop offset="100%" stop-color="#080608"/>
+    </linearGradient>
+    <radialGradient id="glow6" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#080608" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg6)"/>
+  <circle cx="400" cy="270" r="220" fill="url(#glow6)"/>
+  <path d="M400 160 Q450 250 400 340 Q350 250 400 160 Z" fill="#d4af37" opacity="0.8"/>
+  <text x="400" y="440" font-family="Georgia, serif" font-size="28" fill="#e8d08d" text-anchor="middle" letter-spacing="2">FOREVER &amp; ALWAYS</text>
+  <text x="400" y="480" font-family="sans-serif" font-size="16" fill="#bfaab5" text-anchor="middle" letter-spacing="4">[ PLACEHOLDER PHOTO 06 ]</text>
+</svg>

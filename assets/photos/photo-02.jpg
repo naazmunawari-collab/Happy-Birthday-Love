@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c0b1e"/>
+      <stop offset="50%" stop-color="#4a0d2e"/>
+      <stop offset="100%" stop-color="#080608"/>
+    </linearGradient>
+    <radialGradient id="glow2" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#f4acb7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4a0d2e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg2)"/>
+  <circle cx="400" cy="260" r="200" fill="url(#glow2)"/>
+  <!-- Golden Heart Silhouette -->
+  <path d="M400 340 C350 280 280 240 280 180 C280 130 320 100 370 110 C400 120 400 140 400 140 C400 140 400 120 430 110 C480 100 520 130 520 180 C520 240 450 280 400 340 Z" fill="none" stroke="#d4af37" stroke-width="6" opacity="0.85"/>
+  <text x="400" y="440" font-family="Georgia, serif" font-size="28" fill="#e8d08d" text-anchor="middle" letter-spacing="2">THE SMILE I LOVE</text>
+  <text x="400" y="480" font-family="sans-serif" font-size="16" fill="#bfaab5" text-anchor="middle" letter-spacing="4">[ PLACEHOLDER PHOTO 02 ]</text>
+</svg>
