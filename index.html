@@ -77,17 +77,17 @@
         </div>
 
         <!-- Special August Birthday Calendar Widget -->
-        <div class="august-calendar-card" style="margin: 2.5rem auto 0; max-width: 480px; background: var(--glass-bg); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1.5px solid var(--accent-gold); border-radius: 28px; padding: 2rem 1.5rem; box-shadow: var(--glass-shadow); text-align: center; position: relative; z-index: 20;">
-          <div class="calendar-header cursive-heading" style="font-size: 2.5rem; color: var(--accent-gold-light); margin-bottom: 1rem;">
-            📅 August — Special Month
+        <div class="august-calendar-card">
+          <div class="calendar-header cursive-heading">
+            ✨ August — Special Month ✨
           </div>
-          <div class="calendar-days-grid" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.5rem; margin-bottom: 0.6rem; font-size: 0.85rem; color: var(--text-muted); font-weight: 600; letter-spacing: 0.05em;">
+          <div class="calendar-days-grid">
             <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
           </div>
-          <div class="calendar-dates-grid" id="august-calendar-grid" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.5rem;">
+          <div class="calendar-dates-grid" id="august-calendar-grid">
             <!-- Calendar grid rendered dynamically via app.js -->
           </div>
-          <div class="calendar-hint cursive-quote" style="margin-top: 1.2rem; font-size: 1.25rem; color: var(--accent-rose-soft);">
+          <div class="calendar-hint cursive-quote">
             ✨ Click on the golden heart dates for a special message! ✨
           </div>
         </div>
@@ -97,14 +97,14 @@
 
     <!-- Calendar Special Message Modal -->
     <div id="calendar-modal" class="photo-modal">
-      <div class="photo-modal-content" style="text-align: center; align-items: center; max-width: 620px; padding: 3rem 2rem;">
+      <div class="photo-modal-content calendar-modal-content">
         <button id="calendar-modal-close" class="photo-modal-close">&times;</button>
-        <div style="font-size: 4rem; margin-bottom: 0.5rem; animation: pulse-glow 1.5s infinite alternate;">💖 🎂 📅</div>
-        <h2 class="section-title cursive-heading" id="calendar-modal-title" style="font-size: 2.8rem; color: var(--accent-gold-light); margin-bottom: 0.8rem;">August 16th — The Day My World Changed ❤️</h2>
-        <p class="photo-modal-note cursive-quote" id="calendar-modal-body" style="font-size: 1.6rem; color: var(--text-ivory); margin-bottom: 1.5rem; line-height: 1.6;">
+        <div class="calendar-modal-emojis">💖 🎂 ✨</div>
+        <h2 class="calendar-modal-title cursive-heading" id="calendar-modal-title">August 16th — The Day My World Changed ❤️</h2>
+        <p class="calendar-modal-body cursive-quote" id="calendar-modal-body">
           "34 years ago on this very day, August 16th, the most incredible man was born. Out of all the days in history, August 16th will forever be my absolute favorite date."
         </p>
-        <div class="cursive-heading" style="font-size: 2.4rem; color: var(--accent-gold); margin-bottom: 1.5rem;">
+        <div class="calendar-modal-wish cursive-heading">
           Happy 34th Birthday, My Love! ❤️
         </div>
         <button id="calendar-modal-close-btn" class="btn-gold-glow">Keep In My Heart ✨</button>

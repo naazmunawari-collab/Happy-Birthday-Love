@@ -1441,6 +1441,52 @@ body {
 }
 
 /* August Calendar Date Cells Styling */
+.august-calendar-card {
+  margin: 2.5rem auto 0;
+  max-width: 480px;
+  width: 100%;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1.5px solid var(--accent-gold);
+  border-radius: 28px;
+  padding: 2rem 1.5rem;
+  box-shadow: var(--glass-shadow);
+  text-align: center;
+  position: relative;
+  z-index: 20;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-header {
+  font-size: 2.5rem;
+  color: var(--accent-gold-light);
+  margin-bottom: 1rem;
+}
+
+.calendar-days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  width: 100%;
+  text-align: center;
+}
+
+.calendar-dates-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.4rem;
+  width: 100%;
+}
+
 .calendar-date-cell {
   aspect-ratio: 1;
   display: flex;
@@ -1484,6 +1530,50 @@ body {
   font-size: 0.75rem;
   line-height: 1;
   margin-top: 1px;
+}
+
+.calendar-hint {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--accent-rose-soft);
+  text-align: center;
+  width: 100%;
+  line-height: 1.4;
+}
+
+/* Calendar Modal Content Styling */
+.calendar-modal-content {
+  text-align: center;
+  align-items: center;
+  max-width: 620px;
+  width: 92vw;
+  padding: 2.5rem 1.5rem;
+}
+
+.calendar-modal-emojis {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  animation: pulse-glow 1.5s infinite alternate;
+}
+
+.calendar-modal-title {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  color: var(--accent-gold-light);
+  margin-bottom: 0.8rem;
+  line-height: 1.25;
+}
+
+.calendar-modal-body {
+  font-size: clamp(1.1rem, 3.5vw, 1.6rem);
+  color: var(--text-ivory);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.calendar-modal-wish {
+  font-size: clamp(1.5rem, 4.5vw, 2.4rem);
+  color: var(--accent-gold);
+  margin-bottom: 1.5rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -1538,6 +1628,47 @@ body {
   }
   .photo-modal-img {
     max-height: 55vh;
+  }
+
+  /* August Calendar Mobile Optimization */
+  .august-calendar-card {
+    padding: 1.25rem 0.75rem;
+    border-radius: 20px;
+    margin-top: 1.5rem;
+  }
+
+  .calendar-header {
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .calendar-days-grid {
+    gap: 0.2rem;
+    font-size: 0.72rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .calendar-dates-grid {
+    gap: 0.2rem;
+  }
+
+  .calendar-date-cell {
+    font-size: 0.8rem;
+    border-radius: 8px;
+  }
+
+  .calendar-hint {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .calendar-modal-content {
+    padding: 1.5rem 1rem;
+    width: 95vw;
+  }
+
+  .calendar-modal-emojis {
+    font-size: 2.5rem;
   }
 
   /* Vertical Timeline for Mobile */
