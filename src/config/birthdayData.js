@@ -27,44 +27,37 @@ export const birthdayData = {
     {
       id: 1,
       image: "assets/photos/photo-01.jpg",
-      caption: "One of my favorite days with you.",
-      date: "Forever Memory 01",
-      note: "The day I caught you laughing when you thought I wasn't looking."
+      caption: "Roses for My Heart",
+      date: "Precious Moment",
+      note: "The sweet day with red roses and your bright smile that always melts my heart."
     },
     {
       id: 2,
       image: "assets/photos/photo-02.jpg",
-      caption: "The smile I'll never get tired of.",
-      date: "Forever Memory 02",
-      note: "No matter how long the day is, your smile brings me instant peace."
+      caption: "Our Whole World in Our Arms",
+      date: "Family Milestone",
+      note: "Dressed up together, holding our little miracle with so much love and gratitude."
     },
     {
       id: 3,
       image: "assets/photos/photo-03.jpg",
-      caption: "A moment I wish I could replay.",
-      date: "Forever Memory 03",
-      note: "Holding hands in quiet silence, knowing we didn't need words."
+      caption: "Welcome Little One",
+      date: "Unforgettable Blessing",
+      note: "Looking down at our precious newborn wrapped in warmth. A moment frozen in pure love."
     },
     {
       id: 4,
       image: "assets/photos/photo-04.jpg",
-      caption: "Us. That's my favorite place.",
-      date: "Forever Memory 04",
-      note: "Home isn't a location—it's right next to you."
+      caption: "Gentle Loving Gestures",
+      date: "Sweetest Memory",
+      note: "When you gently placed a rose in my hair with so much tenderness and care."
     },
     {
       id: 5,
       image: "assets/photos/photo-05.jpg",
-      caption: "Every adventure feels better with you.",
-      date: "Forever Memory 05",
-      note: "Life with you is the journey I would choose a million times over."
-    },
-    {
-      id: 6,
-      image: "assets/photos/photo-06.jpg",
-      caption: "My heart's safe harbor.",
-      date: "Forever Memory 06",
-      note: "Thank you for being my constant, my strength, and my love."
+      caption: "Celebrating You Always",
+      date: "Birthday Celebration",
+      note: "Surrounded by sparkling candles, sweet cakes, and pure joy for your special day."
     }
   ],
 
