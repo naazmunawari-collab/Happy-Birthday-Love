@@ -1173,7 +1173,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1.5rem;
   overflow-y: auto;
   box-sizing: border-box;
   text-align: center;
@@ -1187,52 +1187,97 @@ body {
   visibility: visible;
 }
 
-.final-headline {
-  font-family: var(--font-serif);
-  font-size: clamp(2rem, 6.5vw, 4.8rem);
+.grand-popup-close {
+  position: absolute;
+  top: 1.8rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: var(--text-gold);
+  font-size: 2.8rem;
+  cursor: pointer;
+  z-index: 9600;
+  transition: transform 0.3s ease, color 0.3s ease;
+  line-height: 1;
+}
+
+.grand-popup-close:hover {
+  transform: rotate(90deg);
   color: var(--accent-gold-light);
-  line-height: 1.25;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 30px var(--accent-gold-glow);
+}
+
+.celebration-container {
+  text-align: center;
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.celebration-emojis {
+  font-size: 3.8rem;
+  margin-bottom: 0.5rem;
+  animation: pulse-glow 1.5s infinite alternate;
+}
+
+.final-headline {
+  font-family: 'Great Vibes', 'Alex Brush', cursive, serif !important;
+  font-size: 5rem;
+  color: var(--accent-gold-light);
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 45px var(--accent-gold-glow);
   word-wrap: break-word;
   overflow-wrap: break-word;
-  max-width: 95vw;
+  max-width: 100%;
 }
 
 .final-subheadline {
-  font-family: var(--font-serif);
-  font-size: clamp(1.2rem, 4vw, 2.8rem);
-  color: var(--text-ivory);
-  margin-bottom: 1.5rem;
-  max-width: 90vw;
+  font-family: 'Great Vibes', 'Alex Brush', cursive, serif !important;
+  font-size: 3.2rem;
+  color: var(--accent-rose-soft);
+  margin-bottom: 1rem;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .final-body {
-  font-size: clamp(1rem, 3vw, 1.35rem);
-  color: var(--text-muted);
-  max-width: 90vw;
-  margin: 0 auto 2rem;
+  font-family: 'Dancing Script', 'Alex Brush', cursive, serif !important;
+  font-size: 1.75rem;
+  color: var(--text-gold);
+  max-width: 750px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
   word-wrap: break-word;
 }
 
 .final-wish-big {
-  font-family: var(--font-serif);
-  font-size: clamp(1.6rem, 5.5vw, 3.2rem);
+  font-family: 'Great Vibes', 'Alex Brush', cursive, serif !important;
+  font-size: 3.6rem;
   color: var(--accent-gold);
   margin-bottom: 1.5rem;
-  max-width: 95vw;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .final-signature {
-  font-family: var(--font-handwriting);
-  font-size: clamp(1.8rem, 6vw, 3.2rem);
-  color: var(--accent-rose-soft);
+  font-family: 'Great Vibes', 'Alex Brush', cursive, serif !important;
+  font-size: 3.5rem;
+  color: var(--text-ivory);
   white-space: pre-line;
-  max-width: 90vw;
+  margin-bottom: 1.5rem;
+}
+
+.btn-revisit-memories {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  padding: 1rem 3rem;
 }
 
 /* Cursive Fonts Utilities */
@@ -1521,20 +1566,61 @@ body {
 
   /* Final Surprise Overlay Mobile Optimization */
   .final-reveal-overlay {
-    padding: 1.5rem 0.75rem;
+    padding: 3.5rem 1rem 2rem 1rem;
+    justify-content: flex-start;
   }
+
+  .grand-popup-close {
+    top: 0.85rem;
+    right: 0.85rem;
+    font-size: 2.2rem;
+    padding: 0.2rem 0.6rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+  }
+
+  .celebration-container {
+    gap: 0.6rem;
+    padding: 0;
+  }
+
+  .celebration-emojis {
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+  }
+
   .final-headline {
-    font-size: 2.1rem;
-    line-height: 1.35;
+    font-size: 2.3rem !important;
+    line-height: 1.25;
+    margin-bottom: 0.4rem;
   }
+
   .final-subheadline {
-    font-size: 1.25rem;
+    font-size: 1.7rem !important;
+    line-height: 1.25;
+    margin-bottom: 0.8rem;
   }
+
+  .final-body {
+    font-size: 1.15rem !important;
+    line-height: 1.55;
+    margin-bottom: 1rem;
+  }
+
   .final-wish-big {
-    font-size: 1.6rem;
+    font-size: 1.9rem !important;
+    margin-bottom: 1rem;
   }
+
   .final-signature {
-    font-size: 1.9rem;
+    font-size: 2rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .btn-revisit-memories {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    padding: 0.8rem 2rem;
   }
 
   .cursive-heading, .cursive-text, .cursive-quote {
