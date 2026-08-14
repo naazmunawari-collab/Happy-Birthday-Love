@@ -58,6 +58,20 @@ export const birthdayData = {
       caption: "Celebrating You Always",
       date: "Birthday Celebration",
       note: "Surrounded by sparkling candles, sweet cakes, and pure joy for your special day."
+    },
+    {
+      id: 6,
+      image: "assets/photos/photo-06.jpg",
+      caption: "Dressed Up in Love",
+      date: "Special Evening",
+      note: "Standing by your side in all our finest, feeling like the luckiest woman in the world."
+    },
+    {
+      id: 7,
+      image: "assets/photos/photo-07.jpg",
+      caption: "Sunny Days & Cool Vibes",
+      date: "Outdoor Escape",
+      note: "Sunlight, smiles, and stylish moments together. You make every day brighter."
     }
   ],
 
