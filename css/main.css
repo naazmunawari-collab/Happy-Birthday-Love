@@ -1,46 +1,44 @@
 /* ==========================================================================
-   SPIDER-MAN SUPERHERO 3D BIRTHDAY DESIGN SYSTEM
-   Fawwaz - Superhero Birthday Universe 🕷️⚡
+   LUXURY CINEMATIC BIRTHDAY DESIGN SYSTEM
+   Syed Yousuf - 34th Birthday Surprise
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
    1. CSS Custom Properties / Design Tokens
    -------------------------------------------------------------------------- */
 :root {
-  /* Spider-Man Color Palette */
-  --bg-obsidian: #080a12;
-  --bg-charcoal: #101422;
-  --bg-wine-dark: #1a0b18;
-  --bg-wine-deep: #280a1d;
+  /* Color Palette */
+  --bg-obsidian: #080608;
+  --bg-charcoal: #120e14;
+  --bg-wine-dark: #1a0814;
+  --bg-wine-deep: #2c0b1e;
   
-  --primary-spidey-red: #e62429;
-  --primary-spider-blue: #0055ff;
-  --primary-rose-dark: #cc182b;
+  --primary-burgundy: #4a0d2e;
+  --primary-rose-dark: #6e1c44;
   
-  --accent-gold-light: #fff0aa;
-  --accent-gold: #ffd700;
-  --accent-gold-dark: #c59b00;
-  --accent-gold-glow: rgba(255, 215, 0, 0.45);
+  --accent-gold-light: #f7e7b4;
+  --accent-gold: #d4af37;
+  --accent-gold-dark: #997819;
+  --accent-gold-glow: rgba(212, 175, 55, 0.4);
 
-  --accent-rose: #ff6b7a;
-  --accent-rose-soft: #ff88a5;
+  --accent-rose: #e0a899;
+  --accent-rose-soft: #f4acb7;
 
-  --text-ivory: #ffffff;
-  --text-muted: #b8c4e0;
-  --text-gold: #ffe57f;
+  --text-ivory: #fbf8f5;
+  --text-muted: #bfaab5;
+  --text-gold: #e8d08d;
   
   /* Glassmorphism Surface Tokens */
-  --glass-bg: rgba(16, 20, 36, 0.75);
-  --glass-border: rgba(230, 36, 41, 0.35);
-  --glass-border-blue: rgba(0, 85, 255, 0.35);
-  --glass-shadow: 0 16px 40px rgba(0, 0, 0, 0.85);
+  --glass-bg: rgba(26, 12, 22, 0.55);
+  --glass-border: rgba(212, 175, 55, 0.22);
+  --glass-border-rose: rgba(244, 172, 183, 0.25);
+  --glass-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
   --glass-blur: blur(16px);
 
   /* Typography */
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-handwriting: 'Alex Brush', cursive, serif;
-  --font-superhero: 'Bangers', cursive, sans-serif;
 
   /* Transitions */
   --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);

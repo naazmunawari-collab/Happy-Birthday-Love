@@ -66,16 +66,16 @@ class BirthdayApp {
     const line4 = document.getElementById('opening-line-4');
     const enterBtn = document.getElementById('btn-enter-surprise');
 
-    // Step 1: "A special surprise is unlocking..."
+    // Step 1: "I made something for you..."
     setTimeout(() => line1?.classList.add('active'), 600);
 
-    // Step 2: "Because today is a super celebration!"
+    // Step 2: "Because today isn't just another day."
     setTimeout(() => line2?.classList.add('active'), 2400);
 
-    // Step 3: "Today, our sweet Laddu turns 3!"
+    // Step 3: "Today, my favorite person turns 34."
     setTimeout(() => line3?.classList.add('active'), 4200);
 
-    // Step 4: "Happy 3rd Birthday, My Laddu! 🕷️⚡"
+    // Step 4: "Happy 34th Birthday, Syed Yousuf ❤️"
     setTimeout(() => line4?.classList.add('active'), 6000);
 
     // Step 5: Reveal Enter Button
@@ -248,8 +248,8 @@ class BirthdayApp {
       const title = document.getElementById('calendar-modal-title');
       const body = document.getElementById('calendar-modal-body');
 
-      if (title) title.textContent = "August 16th — The Day Our Superhero Was Born ❤️";
-      if (body) body.textContent = "3 years ago on this very day, August 16th, our sweet Laddu came into our lives. You brought endless sunshine, giggles, and superhero joy into our home.";
+      if (title) title.textContent = "August 16th — The Day My World Changed ❤️";
+      if (body) body.textContent = "34 years ago on this very day, August 16th, the most incredible man was born. Out of all the days in history, August 16th will forever be my absolute favorite date.";
 
       this.audio.playChimeSFX();
       this.particles?.triggerBurst(e.clientX, e.clientY, 100);
